@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="./main.css">
     <title>Cash register</title>
+    
 </head>
 <body>
     <div class="container">
@@ -13,11 +14,11 @@
         <p class="description">
             Enter the the amount I will give you the change
         </p>
-        <label for ="bill amount">bill amount</label>
-        <input id="bill amount" type="text" />
-        <label for="cash given"> cash Given:</label>
-        <input id="cash given" type="text" />
-        <button id="check button"> CHECK</button>
+        <label for ="bill-amount">bill amount</label>
+        <input id="bill-amount" type="number" />
+        <label for="cash-given"> cash Given:</label>
+        <input id="cash-given" type="number" />
+        <button id="check-button"> CHECK</button>
 
         <p id="error-message"></p>
         
@@ -25,7 +26,13 @@
             <caption>Return cash</caption>
             <tr> 
                 <th>No. of Notes</th>
-                <td></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
             </tr>
             <tr>
                 <th>Note</th>
@@ -41,6 +48,6 @@
 
 
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
